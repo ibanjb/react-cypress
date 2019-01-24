@@ -1,68 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React - Redux - Ant.Design - ESLint - Webpack - Lerna - Cypress
 
-## Available Scripts
+![antdesign](https://tomas.piestansky.cz/static/ant-menu-hero-53d994835d83a2613df8013ae9537376-61a4d.png)
 
-In the project directory, you can run:
 
-### `npm start`
+![Build Status](https://img.shields.io/badge/build-passed-green.svg) ![Lint](https://img.shields.io/badge/lint-passed-green.svg) ![Flow](https://img.shields.io/badge/flow-passed-green.svg) ![ES6](https://img.shields.io/badge/ES6-with%20Flow-yellow.svg) ![React](https://img.shields.io/badge/React-16.7.0-%2300ffff.svg) ![Jest](https://img.shields.io/badge/Jest-23.6.0-red.svg)  ![Webpack](https://img.shields.io/badge/Webpack-4.29.0-blue.svg) ![Cypress](https://img.shields.io/badge/Cypress-3.1.4-%23ff69b4.svg)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![cypress](https://cdn-images-1.medium.com/max/2600/1*FoCFnUGcQvE2zqiFxitXUg.png)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+# Previous steps before run the application
+Be sure to have the last NodeJs LTS (https://nodejs.org) version installed in your computer before continue reading.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The next steps are to install, as a global dependency, these libraries:
+  - Yarn
+  - Cypress
 
-### `npm run build`
+Easy mode: 
+```sh
+$ npm install -g yarn cypress 
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Yarn commands
+The commands available are the next ones:
+  - **watch**. Uses lerna to create a 'watchable' steam instance of the application
+  - **start**. Uses webpack-dev-server in 'development' mode to create a hot-reloading instance
+  - **test**. Uses jest to run the unit tests in a 'development' environment
+  - **test-prod**. Same about but for the 'production' environment
+  - **build**. Uses webpack to create a production bundler
+  - **lint**. Inspect the code to validate the lint rules defined
+  - **flow**. Same above but with the flow rules defined
+  - **flow-coverage**. Uses the flow-coverage-report library to display a 'graphical' related with the flow coverage in the application
+  - **cypress**. Runs a new instance of Cypress to run the E2E tests
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+# Browsing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Verify the deployment by navigating to your server address in your preferred browser.
 
-### `npm run eject`
+```sh
+127.0.0.1:8080
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Products, components and libraries
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This application is currently extended with the following objects. Instructions on how to use them in your own application are linked below.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Products | Description | Site |
+| ------ | ------ | ------ |
+| NodeJs | JavaScript run-time environment | [https://nodejs.org](https://nodejs.org/en/) |
+| React | A JavaScript library for building user interfaces... and more | [https://reactjs.org](https://reactjs.org/) |
+| Redux | A predictable state container for JavaScript apps | [https://redux.js.org](https://redux.js.org/) |
+| ESLint | Pluggable JavaScript linter | [https://eslint.org](https://eslint.org/) |
+| Flow | A static type checker for JavaScript | [https://flow.org](https://flow.org) |
+| Ant.Design | The world's second most popular react UI framework  | [https://ant.design](https://ant.design/) |
+| Webpack | Module bundler | [https://webpack.js.org](https://webpack.js.org/) |
+| Cypress | JavaScript End To End testing framework | [https://cypress.io](https://cypress.io) |
+| Lerna | A too for managing Javascripts projects with multiple packages | [https://lernajs.io](https://lernajs.io/) |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+License
+----
+UNLICENSED
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
