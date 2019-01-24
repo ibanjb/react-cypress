@@ -1,0 +1,55 @@
+{
+    "root": true,
+    "settings": {
+        "react": {
+          "createClass": "createReactClass",
+          "pragma": "React",
+          "version": "detect",
+          "flowVersion": "0.91.0"
+        }
+    },
+    "extends": [
+        "react-app",
+        "eslint:recommended",
+        "plugin:jest/recommended",
+        "prettier",
+        "prettier/flowtype",
+        "prettier/react",
+        "plugin:cypress/recommended"
+    ],
+    "rules": {
+        "jsx-a11y/href-no-hash": "off",
+        "curly": ["error", "all"],
+        "react/jsx-filename-extension": "off",
+        "react/jsx-indent": "off",
+        "react/jsx-indent-props": "off",
+        "react/prop-types": "off",
+        "react/forbid-prop-types": "off",
+        "no-restricted-globals": "off",
+        "no-restricted-syntax": [
+            "error",
+            "DebuggerStatement",
+            "LabeledStatement",
+            "WithStatement"
+        ],
+        "import/prefer-default-export": "off",
+        "import/no-extraneous-dependencies": "off",
+        "no-continue": "off",
+        "react/prefer-stateless-function": "off",
+        "no-plusplus": "off",
+        "no-await-in-loop": "off",
+        "no-unused-vars": "error",
+        "no-shadow": "off",
+        "import/no-named-as-default": "off",
+        "prefer-destructuring": "off",
+        "no-console": "warn",
+        "jest/valid-expect": "off"
+    },
+    "plugins": ["prettier", "cypress", "chai-friendly"],
+    "globals": {
+        "__OOS_CONF__": true
+    },
+    "env": {
+        "cypress/globals": true
+    }
+}

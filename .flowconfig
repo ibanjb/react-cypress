@@ -1,0 +1,35 @@
+[declarations]
+
+
+[ignore]
+.*/node_modules/.*
+.*/__tests__/.*
+.*/_release/.*
+
+
+[include]
+
+
+[libs]
+flow-typed
+
+
+[lints]
+
+
+[options]
+# all=true
+# include_warnings=true
+
+suppress_type=$FlowIssue
+suppress_type=$FlowFixMe
+suppress_type=$FlowFixMeProps
+suppress_type=$FlowFixMeState
+suppress_type=$FixMe
+
+module.file_ext=.js
+module.file_ext=.json
+module.file_ext=.css
+
+[version]
+^0.91.0

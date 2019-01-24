@@ -1,0 +1,50 @@
+{
+  "menuItems": [
+    {
+      "id": "1",
+      "title": "Root",
+      "icon": "home"
+    },
+    {
+      "id": "2",
+      "title": "Dashboard",
+      "icon": "dashboard"
+    },
+    {
+      "id": "3",
+      "title": "Example",
+      "icon": "codepen"
+    },
+    {
+      "id": "4",
+      "title": "Page not found",
+      "icon": "notification"
+    }
+  ],
+  "user": {
+    "id": "12345",
+    "displayName": "John Smith",
+    "name": "John",
+    "familyName": "Smith",
+    "email": "john.smith@tmc.com",
+    "avatarUri": "https://i.ebayimg.com/images/g/IcsAAOSwHptZADdg/s-l64.jpg",
+    "grants": [
+      {
+        "menuItem": "1",
+        "rights": "CDLU"
+      },
+      {
+        "menuItem": "2",
+        "rights": "CDLU"
+      },
+      {
+        "menuItem": "3",
+        "rights": "CDLU"
+      },
+      {
+        "menuItem": "4",
+        "rights": "CDLU"
+      }
+    ]
+  }
+}
